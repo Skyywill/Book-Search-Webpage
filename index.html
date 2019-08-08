@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a BookStore Search Engine">
+    <title>Book Store Searching</title>
+
+      <!-- this is to think all the CSS file -->
+    <link rel="stylesheet" href="css/stylesFont.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/smScreen.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+      <!--this is the end of the head -->
+
+      <!-- the main body starts here -->
+  <body>
+    <div class="main_section fadeIn"></div>
+      <div class="title_box">
+      <div class="main_title">Search for Books</div>
+      <div class="main_subtitle">This is my books engine</div>
+    </div>
+    </div>
+
+    <div>
+      <div class="find_box fadeDown">
+        <div class="content">
+          <input id="searchTab"  class = "input_text" type="text" name="search">
+          <button class="searchButton" onclick="searchRequest()">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start -->
+    <h2 id="title" class="mention_title"></h2>
+    <div class="mentions" id="orders">
+    </div>
+
+
+    <!-- This is for the Script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+
+
+</html>

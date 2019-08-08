@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* Variables */
+
+:root {
+  /* Colors */
+
+  --green-color: #7397cc;
+  --black-color: #313337;
+  --white-color: white;
+
+  /* Text Style */
+  --normal:12px;
+
+  /* Spacing */
+
+  --space:10px;
+  --space-2:20px;
+
+  /* Box Shadow */
+  --box:0px 0 2px 1px #e6e5e9;
+}
+
+/* ----------------------- navigation -------------------------- */
+
+nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover {
+  color: var(--white-color);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding-right: 20px;
+  list-style: none;
+}
+
+/* ---- main body ---- */
+
+html, body {
+  margin:0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--black-color);
+}
+
+p, label {
+  font-size: var(--normal);
+}
+
+hr{
+  opacity: .2;
+}
+
+/*---- MAIN SECTION ---- */
+
+.main_section {
+  background-image: url("../images/librairyshelves.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  position: relative;
+  height: 600px;
+  z-index: -1;
+}
+
+/*---- Books ---- */
+
+.bookitem {
+  padding: 15%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+
+}
+
+.title_box {
+  padding: 15%;
+  height: auto;
+  position: absolute; left: 15%; top: 150px;
+}
+
+.main_title {
+  font-size: 80px;
+  color: white;
+  alignment: center;
+}
+
+.main_subtitle {
+  font-size: large;
+  color: white;
+  text-align: center;
+}
+
+.find_box {
+  padding-top: 180px;
+  padding-left: 15%;
+  padding-right: 5%;
+  margin-top: -226px;
+  align-items: center;
+}
+
+.image-product {
+  text-align: center;
+}
+
+.content {
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+  display: flex;
+  width: auto;
+  margin-right: 60px;
+}
+
+.searchButton {
+  padding: var(--space);
+  background-color: var(--green-color);
+  width: 90px;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+  margin-left: 10px;
+}
+
+.searchButton:hover {
+  background-color: #5988a4;
+}
+
+.input_text {
+  padding: var(--space);
+  width: 100%;
+  border: #313337 2px;
+  border-radius: 2px;
+}
+
+.Extras {
+  padding: 10%;
+  display: flex;
+}
+
+.extra {
+  text-align: center;
+  padding: 20px;
+}
+
+.extra  img {
+  max-height: 100px
+}
+
+.text_extra{
+  text-align: justify;
+}
+
+/* Mentions */
+
+.mentions {
+  padding: 5%;
+  column-count: 3;
+}
+
+.mention img {
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+h2.mention_title {
+  text-align: center;
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.mention {
+  padding: var(--space);
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.content_mention {
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.mention .text {
+  padding: var(--space);
+  width: 100%;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.letter_font {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  color: #313337;
+}
+
+/*---- Sales ---- */
+
+.mod_pmt {
+background-color:var(--white-color);
+box-shadow: var(--box);
+padding:var(--space-2);
+}
+
+.mod_pmt_images {
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin:auto;
+}
+
+.mod_pmt .main_btn {
+      margin-top: 10px;
+}
+
+.data {
+  margin-top: var(--space);
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+/*---- Footer ---- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
