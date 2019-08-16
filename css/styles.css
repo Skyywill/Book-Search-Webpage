@@ -3,22 +3,21 @@
 /* Variables */
 
 :root {
-  /* Colors */
-
-  --green-color: #7397cc;
-  --black-color: #313337;
-  --white-color: white;
 
   /* Text Style */
-  --normal:12px;
-
-  /* Spacing */
-
-  --space:10px;
-  --space-2:20px;
+  --normal:15px;
 
   /* Box Shadow */
-  --box:0px 0 2px 1px #e6e5e9;
+  --box:1px 1 2px 1px #c8c6d2;
+
+  /* Spacing */
+  --space:15px;
+  --space-2:25px;
+
+  /* Colors */
+  --green-color: #8fabd6;
+  --black-color: #242529;
+  --white-color: white;
 }
 
 /* ----------------------- navigation -------------------------- */
@@ -54,11 +53,12 @@ nav ul li {
 
 /* ---- main body ---- */
 
-html, body {
+/*html,*/ body {
   margin:0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--black-color);
+  background-color: #c8c6d2;
 }
 
 p, label {
@@ -71,15 +71,16 @@ hr{
 
 /*---- MAIN SECTION ---- */
 
+/* */
 .main_section {
   background-image: url("../images/librairyshelves.jpg");
-  background-color: #cccccc;
+  background-color: #e6e6e6;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
   position: relative;
-  height: 600px;
+  height: 620px;
   z-index: -1;
 }
 
@@ -94,25 +95,25 @@ hr{
   background-size: cover;
 
 }
-
+/* */
 .title_box {
   padding: 15%;
   height: auto;
   position: absolute; left: 15%; top: 150px;
 }
-
+/* */
 .main_title {
   font-size: 80px;
   color: white;
   alignment: center;
 }
-
+/* */
 .main_subtitle {
   font-size: large;
   color: white;
   text-align: center;
 }
-
+/* */
 .find_box {
   padding-top: 180px;
   padding-left: 15%;
@@ -120,11 +121,11 @@ hr{
   margin-top: -226px;
   align-items: center;
 }
-
+/* */
 .image-product {
   text-align: center;
 }
-
+/* */
 .content {
   padding: 20px;
   background: var(--white-color);
@@ -134,30 +135,31 @@ hr{
   width: auto;
   margin-right: 60px;
 }
-
+/* */
 .searchButton {
   padding: var(--space);
   background-color: var(--green-color);
+  color: var(--white-color);
   width: 90px;
   border: 0px;
   border-radius: 2px;
-  cursor: pointer;
-  color: var(--white-color);
   margin-left: 10px;
+  cursor: pointer;
 }
 
+/* */
 .searchButton:hover {
-  background-color: #5988a4;
+  background-color: #8bacc1;
 }
-
+/* */
 .input_text {
+  border-radius: 2px;
+  border: #484b51 2px;
   padding: var(--space);
   width: 100%;
-  border: #313337 2px;
-  border-radius: 2px;
 }
 
-.Extras {
+ .Extras {
   padding: 10%;
   display: flex;
 }
@@ -176,12 +178,12 @@ hr{
 }
 
 /* Mentions */
-
+/* */
 .mentions {
   padding: 5%;
   column-count: 3;
 }
-
+/* */
 .mention img {
   width: 100%;
   -webkit-column-break-inside: avoid;
@@ -189,6 +191,7 @@ hr{
   break-inside: avoid;
 }
 
+/* */
 h2.mention_title {
   text-align: center;
   width: 100%;
@@ -197,36 +200,51 @@ h2.mention_title {
   break-inside: avoid;
 }
 
+/* */
 .mention {
   padding: var(--space);
   width: 100%;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px  #98979b;
 }
 
+/* */
 .content_mention {
-  box-shadow: 0px 0 2px 1px #e6e5e9;
+  box-shadow: 0px 0 2px 1px #f2f1f3;
   width: 100%;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
 
+/* */
 .mention .text {
-  padding: var(--space);
   width: 100%;
+  padding: var(--space);
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
 }
-
+/* */
 .letter_font {
   font-family: 'Open Sans', sans-serif;
+  color: #484b51;
   font-size: 9px;
-  color: #313337;
+  -webkit-transition: font-size 2s;
+  transition: font-size 2s;
 }
 
+/* */
+.letter_font:hover {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #e73e9d;
+  font-style: italic;
+}
 /*---- Sales ---- */
 
 .mod_pmt {
@@ -236,9 +254,9 @@ padding:var(--space-2);
 }
 
 .mod_pmt_images {
-  max-width: 150px;
   text-align: center;
   width: 100%;
+  max-width: 150px;
   margin:auto;
 }
 
@@ -257,6 +275,7 @@ padding:var(--space-2);
 
 /*---- Footer ---- */
 
+/* */
 footer {
   display: flex;
   justify-content: space-between;
@@ -264,4 +283,9 @@ footer {
   background-color: var(--black-color);
   padding: var(--space);
   color: var(--white-color);
+}
+
+/* */
+.h5footbox {
+  margin-left: 50px;
 }
